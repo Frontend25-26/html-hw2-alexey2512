@@ -8,7 +8,7 @@
 }
 
 .container {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -19,7 +19,7 @@
 .card {
     background: white;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .highlight {
@@ -34,13 +34,6 @@
 .hover-effect:hover {
     background-color: var(--cute-red);
     color: white;
-}
-
-.quote::before {
-    content: "";
-    font-size: 2em;
-    color: var(--cute-red);
-    margin-right: 10px;
 }
 
 .nav-item::after {
