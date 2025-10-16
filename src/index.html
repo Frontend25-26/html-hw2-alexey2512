@@ -1,11 +1,151 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Roboto+Condensed:wght@400;700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
     <title>HW2</title>
 </head>
-<body>
+<body class="page">
+<header class="header">
+    <hgroup class="header__titles">
+        <h1 class="header__title">
+            <mark class="header__highlight">Спайдер-Мен</mark>
+        </h1>
+        <h2 class="header__subtitle">Человек-паук</h2>
+    </hgroup>
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__item"><a href="#bio" class="nav__link">Биография</a></li>
+            <li class="nav__item"><a href="#abilities" class="nav__link">Способности</a></li>
+            <li class="nav__item"><a href="#quote" class="nav__link">Цитата</a></li>
+            <li class="nav__item"><a href="#statistics" class="nav__link">Показатели</a></li>
+            <li class="nav__item"><a href="#enemies" class="nav__link">Враги</a></li>
+        </ul>
+    </nav>
+</header>
 
+<main class="card">
+    <article id="bio" class="card__section">
+        <header class="card__header">
+            <h3 class="card__title">Биография</h3>
+        </header>
+        <figure class="card__figure">
+            <img src="../pics/spiderman_in_action.jpg" alt="Человек-паук в действии" width="300" class="card__image">
+            <figcaption class="card__caption">первое фото в интернете по запросу "человек паук фото"</figcaption>
+        </figure>
+        <p class="card__text">Питер Паркер — обычный подросток из Нью-Йорка, который после укуса радиоактивного паука
+            получил
+            сверхспособности. Используя свои новые силы, он стал супергероем, защищающим город от преступности.</p>
+        <aside class="card__aside">
+            <p class="card__text"><strong>Интересный факт:</strong> Спайдер-Мен — один из самых популярных супергероев
+                Marvel.
+                <del>Это ясно как минимум из того факта, что мой бывший сосед по общаге индус дико фанател от него.
+                </del>
+            </p>
+        </aside>
+    </article>
+
+    <hr class="card_separator">
+
+    <article id="abilities" class="card__section">
+        <header class="card__header">
+            <h3 class="card__title">Способности</h3>
+        </header>
+        <ul class="card__list">
+            <li class="card__list-item">Сила, скорость и ловкость</li>
+            <li class="card__list-item">Умение прилипать к стенам</li>
+            <li class="card__list-item">Паучья чуйка (способность предчувствовать опасность)</li>
+            <li class="card__list-item">Способность пуляться паутиной из запястий (только у Тоби Магуайра, остальные - с
+                помощью специальных
+                устройств)
+            </li>
+        </ul>
+        <details class="card__details">
+            <summary class="card__summary">Дополнительные навыки</summary>
+            <p class="card__text">Спайдер-Мен также является опытным бойцом и стратегом.</p>
+        </details>
+    </article>
+
+    <hr class="card_separator">
+
+    <article id="quote" class="card__section">
+        <header class="card__header">
+            <h3 class="card__title">Знаменитая цитата</h3>
+        </header>
+        <blockquote class="card__quote">
+            <p class="card__quote-text">&laquo;С великой силой приходит великая ответственность.&raquo;</p>
+            <footer class="card__quote-footer">— Дядя Бен Паркер</footer>
+        </blockquote>
+        <p class="card__text">Эта фраза стала жизненным девизом Питера Паркера.</p>
+    </article>
+
+    <hr class="card_separator">
+
+    <article id="statistics" class="card__section">
+        <header class="card__header">
+            <h3 class="card__title">Характеристики</h3>
+        </header>
+        <table class="card__table">
+            <caption class="card__table-caption">Боевые показатели</caption>
+            <thead class="card__table-head">
+            <tr>
+                <th class="card__table-header">Характеристика</th>
+                <th class="card__table-header">Уровень</th>
+            </tr>
+            </thead>
+            <tbody class="card__table-body">
+            <tr class="card__table-row">
+                <td class="card__table-cell">Сила</td>
+                <td class="card__table-cell">4/5</td>
+            </tr>
+            <tr class="card__table-row">
+                <td class="card__table-cell">Скорость</td>
+                <td class="card__table-cell">4/5</td>
+            </tr>
+            <tr class="card__table-row">
+                <td class="card__table-cell">Интеллект</td>
+                <td class="card__table-cell">5/5</td>
+            </tr>
+            <tr class="card__table-row">
+                <td class="card__table-cell">Выносливость</td>
+                <td class="card__table-cell">3/5</td>
+            </tr>
+            </tbody>
+        </table>
+    </article>
+
+    <hr class="card_separator">
+
+    <article id="enemies" class="card__section">
+        <header class="card__header">
+            <h3 class="card__title">Противники</h3>
+        </header>
+        <ol class="card__list card__list--numbered">
+            <li class="card__list-item">Зелёный гоблин</li>
+            <li class="card__list-item">Доктор Осьминог</li>
+            <li class="card__list-item">Веном</li>
+            <li class="card__list-item">Песочный человек</li>
+            <li class="card__list-item">Электро</li>
+        </ol>
+    </article>
+
+    <button class="card__button">нажмите чтобы погладить паучка</button>
+
+    <hr class="card_separator">
+</main>
+
+<footer class="footer">
+    <address class="footer__address">
+        Создано мной<br>
+        Контакт: <a href="mailto:alexey.stepurin2512@gmail.com" class="footer__link">some.mail.address@domain.topleveldomain</a>
+    </address>
+    <p class="footer__copyright"><small>&copy; Все права на персонажа принадлежат Marvel Comics</small></p>
+    <time datetime="2025-09-30" class="footer__time">Опубликовано 30 сентября 2025 года</time>
+</footer>
 </body>
 </html>
