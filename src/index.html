@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,144 +8,144 @@
     <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Roboto+Condensed:wght@400;700&display=swap"
           rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
-    <title>HW1</title>
+    <title>HW2</title>
 </head>
-<body class="container">
-<header class="text-center">
-    <hgroup>
-        <h1>
-            <mark class="highlight">Спайдер-Мен</mark>
+<body class="page">
+<header class="header">
+    <hgroup class="header__titles">
+        <h1 class="header__title">
+            <mark class="header__highlight">Спайдер-Мен</mark>
         </h1>
-        <h2>Человек-паук</h2>
+        <h2 class="header__subtitle">Человек-паук</h2>
     </hgroup>
-    <nav>
-        <ul>
-            <li><a href="#bio" class="nav-item hover-effect">Биография</a></li>
-            <li><a href="#abilities" class="nav-item hover-effect">Способности</a></li>
-            <li><a href="#quote" class="nav-item hover-effect">Цитата</a></li>
-            <li><a href="#statistics" class="nav-item hover-effect">Показатели</a></li>
-            <li><a href="#enemies" class="nav-item hover-effect">Враги</a></li>
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__item"><a href="#bio" class="nav__link">Биография</a></li>
+            <li class="nav__item"><a href="#abilities" class="nav__link">Способности</a></li>
+            <li class="nav__item"><a href="#quote" class="nav__link">Цитата</a></li>
+            <li class="nav__item"><a href="#statistics" class="nav__link">Показатели</a></li>
+            <li class="nav__item"><a href="#enemies" class="nav__link">Враги</a></li>
         </ul>
     </nav>
 </header>
 
 <main class="card">
-    <article id="bio" class="card-section">
-        <header>
-            <h3>Биография</h3>
+    <article id="bio" class="card__section">
+        <header class="card__header">
+            <h3 class="card__title">Биография</h3>
         </header>
-        <figure class="text-center">
-            <img src="../pics/spiderman_in_action.jpg" alt="Человек-паук в действии" width="300">
-            <figcaption>первое фото в интернете по запросу "человек паук фото"</figcaption>
+        <figure class="card__figure">
+            <img src="../pics/spiderman_in_action.jpg" alt="Человек-паук в действии" width="300" class="card__image">
+            <figcaption class="card__caption">первое фото в интернете по запросу "человек паук фото"</figcaption>
         </figure>
-        <p>Питер Паркер — обычный подросток из Нью-Йорка, который после укуса радиоактивного паука получил
+        <p class="card__text">Питер Паркер — обычный подросток из Нью-Йорка, который после укуса радиоактивного паука
+            получил
             сверхспособности. Используя свои новые силы, он стал супергероем, защищающим город от преступности.</p>
-        <aside>
-            <p><strong>Интересный факт:</strong> Спайдер-Мен — один из самых популярных супергероев Marvel.
-                <del>Это ясно как минимум из того факта, что мой бывший сосед по общаге индус дико фанател от
-                    него.
+        <aside class="card__aside">
+            <p class="card__text"><strong>Интересный факт:</strong> Спайдер-Мен — один из самых популярных супергероев
+                Marvel.
+                <del>Это ясно как минимум из того факта, что мой бывший сосед по общаге индус дико фанател от него.
                 </del>
             </p>
         </aside>
     </article>
 
-    <hr>
+    <hr class="card_separator">
 
-    <article id="abilities" class="card-section">
-        <header>
-            <h3>Способности</h3>
+    <article id="abilities" class="card__section">
+        <header class="card__header">
+            <h3 class="card__title">Способности</h3>
         </header>
-        <ul>
-            <li class="list-item">Сила, скорость и ловкость</li>
-            <li class="list-item">Умение прилипать к стенам</li>
-            <li class="list-item">Паучья чуйка (способность предчувствовать опасность)</li>
-            <li class="list-item">Способность пуляться паутиной из запястий (только у Тоби Магуайра, остальные - с
+        <ul class="card__list">
+            <li class="card__list-item">Сила, скорость и ловкость</li>
+            <li class="card__list-item">Умение прилипать к стенам</li>
+            <li class="card__list-item">Паучья чуйка (способность предчувствовать опасность)</li>
+            <li class="card__list-item">Способность пуляться паутиной из запястий (только у Тоби Магуайра, остальные - с
                 помощью специальных
                 устройств)
             </li>
         </ul>
-        <details class="hover-effect">
-            <summary>Дополнительные навыки</summary>
-            <p>Спайдер-Мен также является опытным бойцом и стратегом.</p>
+        <details class="card__details">
+            <summary class="card__summary">Дополнительные навыки</summary>
+            <p class="card__text">Спайдер-Мен также является опытным бойцом и стратегом.</p>
         </details>
     </article>
 
-    <hr>
+    <hr class="card_separator">
 
-    <article id="quote" class="card-section">
-        <header>
-            <h3>Знаменитая цитата</h3>
+    <article id="quote" class="card__section">
+        <header class="card__header">
+            <h3 class="card__title">Знаменитая цитата</h3>
         </header>
-        <blockquote class="quote">
-            <p>&laquo;С великой силой приходит великая ответственность.&raquo;</p>
-            <footer class="text-center">— Дядя Бен Паркер</footer>
+        <blockquote class="card__quote">
+            <p class="card__quote-text">&laquo;С великой силой приходит великая ответственность.&raquo;</p>
+            <footer class="card__quote-footer">— Дядя Бен Паркер</footer>
         </blockquote>
-        <p>Эта фраза стала жизненным девизом Питера Паркера.</p>
+        <p class="card__text">Эта фраза стала жизненным девизом Питера Паркера.</p>
     </article>
 
-    <hr>
+    <hr class="card_separator">
 
-    <article id="statistics" class="card-section">
-        <header>
-            <h3>Характеристики</h3>
+    <article id="statistics" class="card__section">
+        <header class="card__header">
+            <h3 class="card__title">Характеристики</h3>
         </header>
-        <table class="hover-table">
-            <caption>Боевые показатели</caption>
-            <thead>
+        <table class="card__table">
+            <caption class="card__table-caption">Боевые показатели</caption>
+            <thead class="card__table-head">
             <tr>
-                <th>Характеристика</th>
-                <th>Уровень</th>
+                <th class="card__table-header">Характеристика</th>
+                <th class="card__table-header">Уровень</th>
             </tr>
             </thead>
-            <tbody>
-            <tr class="table-row">
-                <td>Сила</td>
-                <td>4/5</td>
+            <tbody class="card__table-body">
+            <tr class="card__table-row">
+                <td class="card__table-cell">Сила</td>
+                <td class="card__table-cell">4/5</td>
             </tr>
-            <tr class="table-row">
-                <td>Скорость</td>
-                <td>4/5</td>
+            <tr class="card__table-row">
+                <td class="card__table-cell">Скорость</td>
+                <td class="card__table-cell">4/5</td>
             </tr>
-            <tr class="table-row">
-                <td>Интеллект</td>
-                <td>5/5</td>
+            <tr class="card__table-row">
+                <td class="card__table-cell">Интеллект</td>
+                <td class="card__table-cell">5/5</td>
             </tr>
-            <tr class="table-row">
-                <td>Выносливость</td>
-                <td>3/5</td>
+            <tr class="card__table-row">
+                <td class="card__table-cell">Выносливость</td>
+                <td class="card__table-cell">3/5</td>
             </tr>
             </tbody>
         </table>
     </article>
 
-    <hr>
+    <hr class="card_separator">
 
-    <article id="enemies" class="card-section">
-        <header>
-            <h3>Противники</h3>
+    <article id="enemies" class="card__section">
+        <header class="card__header">
+            <h3 class="card__title">Противники</h3>
         </header>
-        <ol>
-            <li class="list-item">Зелёный гоблин</li>
-            <li class="list-item">Доктор Осьминог</li>
-            <li class="list-item">Веном</li>
-            <li class="list-item">Песочный человек</li>
-            <li class="list-item">Электро</li>
+        <ol class="card__list card__list--numbered">
+            <li class="card__list-item">Зелёный гоблин</li>
+            <li class="card__list-item">Доктор Осьминог</li>
+            <li class="card__list-item">Веном</li>
+            <li class="card__list-item">Песочный человек</li>
+            <li class="card__list-item">Электро</li>
         </ol>
     </article>
 
-    <button class="hover-effect">нажмите чтобы погладить паучка</button>
+    <button class="card__button">нажмите чтобы погладить паучка</button>
 
-    <hr>
+    <hr class="card_separator">
 </main>
 
-<footer class="text-center">
-    <address>
+<footer class="footer">
+    <address class="footer__address">
         Создано мной<br>
-        Контакт: <a href="mailto:alexey.stepurin2512@gmail.com">some.mail.address@domain.topleveldomain</a>
+        Контакт: <a href="mailto:alexey.stepurin2512@gmail.com" class="footer__link">some.mail.address@domain.topleveldomain</a>
     </address>
-    <p><small>&copy; Все права на персонажа принадлежат Marvel Comics</small></p>
-    <time datetime="2025-09-30">Опубликовано 30 сентября 2025 года</time>
+    <p class="footer__copyright"><small>&copy; Все права на персонажа принадлежат Marvel Comics</small></p>
+    <time datetime="2025-09-30" class="footer__time">Опубликовано 30 сентября 2025 года</time>
 </footer>
 </body>
 </html>
-
